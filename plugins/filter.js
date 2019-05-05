@@ -28,7 +28,5 @@ function formatTime(timeCreated) {
     return Math.round(diff / periods.minute) + ' minutes';
   } else if (diff > periods.second) {
     return Math.round(diff / periods.second) + ' seconds';
-  } else {
-    return 'Just Now'
   }
 }

@@ -45,8 +45,7 @@ export default {
   */
   plugins: [
     '@/plugins/vuetify',
-    '@/plugins/Socket.js',
-    '@/plugins/filter.js'
+    '@/plugins/Socket.js'
   ],
 
   /*

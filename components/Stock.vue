@@ -5,14 +5,14 @@
       height="150"
       class="ma-1">
       <div class="text-xs-center pa-1">
-        <div class="py-3 title">{{ stock.name }}</div>
+        <div class="py-3 title text-capitalize">{{ stock.name }}</div>
         <div class="py-3 body-1">
          <v-icon size="24" v-if="stock.background_color == 'green'">arrow_drop_up</v-icon>
          <v-icon size="24" v-if="stock.background_color == 'red'">arrow_drop_down</v-icon>
          {{ stock.price }}
         </div>
         <div class="py-2 caption">
-          {{ stock.last_updated_at | timeFilter }}
+          {{ stock.update_at }}
         </div>
       </div>
     </v-card>
